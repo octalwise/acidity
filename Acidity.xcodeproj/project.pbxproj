@@ -1,0 +1,940 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A7CEC5D29D8D77D00A4548C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CEC5C29D8D77D00A4548C /* Icon.png */; };
+		2A7CEC5E29D8D77D00A4548C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CEC5C29D8D77D00A4548C /* Icon.png */; };
+		2ADF43C229CF68FC00C02E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF43C129CF68FC00C02E0D /* AppDelegate.swift */; };
+		2ADF43C429CF68FC00C02E0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF43C329CF68FC00C02E0D /* SceneDelegate.swift */; };
+		2ADF43C729CF68FC00C02E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43C529CF68FC00C02E0D /* LaunchScreen.storyboard */; };
+		2ADF43CA29CF68FC00C02E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43C829CF68FC00C02E0D /* Main.storyboard */; };
+		2ADF43D329CF68FC00C02E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF43D229CF68FC00C02E0D /* AppDelegate.swift */; };
+		2ADF43D629CF68FC00C02E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43D429CF68FC00C02E0D /* Main.storyboard */; };
+		2ADF43DD29CF68FC00C02E0D /* Acidity Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2ADF43DC29CF68FC00C02E0D /* Acidity Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2ADF43E729CF68FC00C02E0D /* Acidity Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2ADF43E629CF68FC00C02E0D /* Acidity Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2ADF43ED29CF68FC00C02E0D /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43A829CF68F800C02E0D /* Main.html */; };
+		2ADF43EE29CF68FC00C02E0D /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43A829CF68F800C02E0D /* Main.html */; };
+		2ADF43F129CF68FC00C02E0D /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43AB29CF68F800C02E0D /* Style.css */; };
+		2ADF43F229CF68FC00C02E0D /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43AB29CF68F800C02E0D /* Style.css */; };
+		2ADF43F329CF68FC00C02E0D /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43AC29CF68F800C02E0D /* Script.js */; };
+		2ADF43F429CF68FC00C02E0D /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43AC29CF68F800C02E0D /* Script.js */; };
+		2ADF43F529CF68FC00C02E0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF43AD29CF68F800C02E0D /* ViewController.swift */; };
+		2ADF43F629CF68FC00C02E0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF43AD29CF68F800C02E0D /* ViewController.swift */; };
+		2ADF43F729CF68FC00C02E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43AE29CF68FB00C02E0D /* Assets.xcassets */; };
+		2ADF43F829CF68FC00C02E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43AE29CF68FB00C02E0D /* Assets.xcassets */; };
+		2ADF43F929CF68FC00C02E0D /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF43B029CF68FB00C02E0D /* SafariWebExtensionHandler.swift */; };
+		2ADF43FA29CF68FC00C02E0D /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF43B029CF68FB00C02E0D /* SafariWebExtensionHandler.swift */; };
+		2ADF43FB29CF68FC00C02E0D /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B229CF68FB00C02E0D /* _locales */; };
+		2ADF43FC29CF68FC00C02E0D /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B229CF68FB00C02E0D /* _locales */; };
+		2ADF43FD29CF68FC00C02E0D /* images in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B329CF68FB00C02E0D /* images */; };
+		2ADF43FE29CF68FC00C02E0D /* images in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B329CF68FB00C02E0D /* images */; };
+		2ADF43FF29CF68FC00C02E0D /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B429CF68FB00C02E0D /* manifest.json */; };
+		2ADF440029CF68FC00C02E0D /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B429CF68FB00C02E0D /* manifest.json */; };
+		2ADF440129CF68FC00C02E0D /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B529CF68FB00C02E0D /* background.js */; };
+		2ADF440229CF68FC00C02E0D /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B529CF68FB00C02E0D /* background.js */; };
+		2AFBADCF2B098C5000F90E5E /* settings in Resources */ = {isa = PBXBuildFile; fileRef = 2AFBADCE2B098C5000F90E5E /* settings */; };
+		2AFBADD02B098C5000F90E5E /* settings in Resources */ = {isa = PBXBuildFile; fileRef = 2AFBADCE2B098C5000F90E5E /* settings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2ADF43DE29CF68FC00C02E0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ADF43A229CF68F800C02E0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ADF43DB29CF68FC00C02E0D;
+			remoteInfo = "Acidity Extension (iOS)";
+		};
+		2ADF43E829CF68FC00C02E0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ADF43A229CF68F800C02E0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ADF43E529CF68FC00C02E0D;
+			remoteInfo = "Acidity Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2ADF441029CF68FC00C02E0D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2ADF43DD29CF68FC00C02E0D /* Acidity Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADF441729CF68FC00C02E0D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2ADF43E729CF68FC00C02E0D /* Acidity Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2A7CEC5C29D8D77D00A4548C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		2ADF43A929CF68F800C02E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		2ADF43AB29CF68F800C02E0D /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		2ADF43AC29CF68F800C02E0D /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		2ADF43AD29CF68F800C02E0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2ADF43AE29CF68FB00C02E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2ADF43B029CF68FB00C02E0D /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		2ADF43B229CF68FB00C02E0D /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		2ADF43B329CF68FB00C02E0D /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		2ADF43B429CF68FB00C02E0D /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		2ADF43B529CF68FB00C02E0D /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		2ADF43BE29CF68FC00C02E0D /* Acidity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acidity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADF43C129CF68FC00C02E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2ADF43C329CF68FC00C02E0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2ADF43C629CF68FC00C02E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2ADF43C929CF68FC00C02E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2ADF43CB29CF68FC00C02E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ADF43D029CF68FC00C02E0D /* Acidity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acidity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADF43D229CF68FC00C02E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2ADF43D529CF68FC00C02E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2ADF43D729CF68FC00C02E0D /* Acidity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Acidity.entitlements; sourceTree = "<group>"; };
+		2ADF43DC29CF68FC00C02E0D /* Acidity Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Acidity Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADF43E129CF68FC00C02E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ADF43E629CF68FC00C02E0D /* Acidity Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Acidity Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADF43EB29CF68FC00C02E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ADF43EC29CF68FC00C02E0D /* Acidity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Acidity.entitlements; sourceTree = "<group>"; };
+		2AFBADCE2B098C5000F90E5E /* settings */ = {isa = PBXFileReference; lastKnownFileType = folder; path = settings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2ADF43BB29CF68FC00C02E0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADF43CD29CF68FC00C02E0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADF43D929CF68FC00C02E0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADF43E329CF68FC00C02E0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ADF43A129CF68F800C02E0D = {
+			isa = PBXGroup;
+			children = (
+				2ADF43A629CF68F800C02E0D /* Shared (App) */,
+				2ADF43AF29CF68FB00C02E0D /* Shared (Extension) */,
+				2ADF43C029CF68FC00C02E0D /* iOS (App) */,
+				2ADF43D129CF68FC00C02E0D /* macOS (App) */,
+				2ADF43E029CF68FC00C02E0D /* iOS (Extension) */,
+				2ADF43EA29CF68FC00C02E0D /* macOS (Extension) */,
+				2ADF43BF29CF68FC00C02E0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2ADF43A629CF68F800C02E0D /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF43AD29CF68F800C02E0D /* ViewController.swift */,
+				2ADF43AE29CF68FB00C02E0D /* Assets.xcassets */,
+				2ADF43A729CF68F800C02E0D /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		2ADF43A729CF68F800C02E0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A7CEC5C29D8D77D00A4548C /* Icon.png */,
+				2ADF43A829CF68F800C02E0D /* Main.html */,
+				2ADF43AB29CF68F800C02E0D /* Style.css */,
+				2ADF43AC29CF68F800C02E0D /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2ADF43AF29CF68FB00C02E0D /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF43B029CF68FB00C02E0D /* SafariWebExtensionHandler.swift */,
+				2ADF43B129CF68FB00C02E0D /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		2ADF43B129CF68FB00C02E0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF43B229CF68FB00C02E0D /* _locales */,
+				2ADF43B329CF68FB00C02E0D /* images */,
+				2ADF43B429CF68FB00C02E0D /* manifest.json */,
+				2ADF43B529CF68FB00C02E0D /* background.js */,
+				2AFBADCE2B098C5000F90E5E /* settings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2ADF43BF29CF68FC00C02E0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF43BE29CF68FC00C02E0D /* Acidity.app */,
+				2ADF43D029CF68FC00C02E0D /* Acidity.app */,
+				2ADF43DC29CF68FC00C02E0D /* Acidity Extension.appex */,
+				2ADF43E629CF68FC00C02E0D /* Acidity Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2ADF43C029CF68FC00C02E0D /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF43C129CF68FC00C02E0D /* AppDelegate.swift */,
+				2ADF43C329CF68FC00C02E0D /* SceneDelegate.swift */,
+				2ADF43C529CF68FC00C02E0D /* LaunchScreen.storyboard */,
+				2ADF43C829CF68FC00C02E0D /* Main.storyboard */,
+				2ADF43CB29CF68FC00C02E0D /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		2ADF43D129CF68FC00C02E0D /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF43D229CF68FC00C02E0D /* AppDelegate.swift */,
+				2ADF43D429CF68FC00C02E0D /* Main.storyboard */,
+				2ADF43D729CF68FC00C02E0D /* Acidity.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		2ADF43E029CF68FC00C02E0D /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF43E129CF68FC00C02E0D /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		2ADF43EA29CF68FC00C02E0D /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF43EB29CF68FC00C02E0D /* Info.plist */,
+				2ADF43EC29CF68FC00C02E0D /* Acidity.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2ADF43BD29CF68FC00C02E0D /* Acidity (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ADF441129CF68FC00C02E0D /* Build configuration list for PBXNativeTarget "Acidity (iOS)" */;
+			buildPhases = (
+				2ADF43BA29CF68FC00C02E0D /* Sources */,
+				2ADF43BB29CF68FC00C02E0D /* Frameworks */,
+				2ADF43BC29CF68FC00C02E0D /* Resources */,
+				2ADF441029CF68FC00C02E0D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ADF43DF29CF68FC00C02E0D /* PBXTargetDependency */,
+			);
+			name = "Acidity (iOS)";
+			productName = "Acidity (iOS)";
+			productReference = 2ADF43BE29CF68FC00C02E0D /* Acidity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2ADF43CF29CF68FC00C02E0D /* Acidity (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ADF441829CF68FC00C02E0D /* Build configuration list for PBXNativeTarget "Acidity (macOS)" */;
+			buildPhases = (
+				2ADF43CC29CF68FC00C02E0D /* Sources */,
+				2ADF43CD29CF68FC00C02E0D /* Frameworks */,
+				2ADF43CE29CF68FC00C02E0D /* Resources */,
+				2ADF441729CF68FC00C02E0D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ADF43E929CF68FC00C02E0D /* PBXTargetDependency */,
+			);
+			name = "Acidity (macOS)";
+			productName = "Acidity (macOS)";
+			productReference = 2ADF43D029CF68FC00C02E0D /* Acidity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2ADF43DB29CF68FC00C02E0D /* Acidity Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ADF440D29CF68FC00C02E0D /* Build configuration list for PBXNativeTarget "Acidity Extension (iOS)" */;
+			buildPhases = (
+				2ADF43D829CF68FC00C02E0D /* Sources */,
+				2ADF43D929CF68FC00C02E0D /* Frameworks */,
+				2ADF43DA29CF68FC00C02E0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Acidity Extension (iOS)";
+			productName = "Acidity Extension (iOS)";
+			productReference = 2ADF43DC29CF68FC00C02E0D /* Acidity Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		2ADF43E529CF68FC00C02E0D /* Acidity Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ADF441429CF68FC00C02E0D /* Build configuration list for PBXNativeTarget "Acidity Extension (macOS)" */;
+			buildPhases = (
+				2ADF43E229CF68FC00C02E0D /* Sources */,
+				2ADF43E329CF68FC00C02E0D /* Frameworks */,
+				2ADF43E429CF68FC00C02E0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Acidity Extension (macOS)";
+			productName = "Acidity Extension (macOS)";
+			productReference = 2ADF43E629CF68FC00C02E0D /* Acidity Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2ADF43A229CF68F800C02E0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					2ADF43BD29CF68FC00C02E0D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2ADF43CF29CF68FC00C02E0D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2ADF43DB29CF68FC00C02E0D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2ADF43E529CF68FC00C02E0D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 2ADF43A529CF68F800C02E0D /* Build configuration list for PBXProject "Acidity" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2ADF43A129CF68F800C02E0D;
+			productRefGroup = 2ADF43BF29CF68FC00C02E0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2ADF43BD29CF68FC00C02E0D /* Acidity (iOS) */,
+				2ADF43CF29CF68FC00C02E0D /* Acidity (macOS) */,
+				2ADF43DB29CF68FC00C02E0D /* Acidity Extension (iOS) */,
+				2ADF43E529CF68FC00C02E0D /* Acidity Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2ADF43BC29CF68FC00C02E0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADF43C729CF68FC00C02E0D /* LaunchScreen.storyboard in Resources */,
+				2ADF43ED29CF68FC00C02E0D /* Main.html in Resources */,
+				2ADF43F329CF68FC00C02E0D /* Script.js in Resources */,
+				2ADF43F729CF68FC00C02E0D /* Assets.xcassets in Resources */,
+				2ADF43CA29CF68FC00C02E0D /* Main.storyboard in Resources */,
+				2A7CEC5D29D8D77D00A4548C /* Icon.png in Resources */,
+				2ADF43F129CF68FC00C02E0D /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADF43CE29CF68FC00C02E0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A7CEC5E29D8D77D00A4548C /* Icon.png in Resources */,
+				2ADF43F229CF68FC00C02E0D /* Style.css in Resources */,
+				2ADF43D629CF68FC00C02E0D /* Main.storyboard in Resources */,
+				2ADF43F429CF68FC00C02E0D /* Script.js in Resources */,
+				2ADF43F829CF68FC00C02E0D /* Assets.xcassets in Resources */,
+				2ADF43EE29CF68FC00C02E0D /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADF43DA29CF68FC00C02E0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AFBADCF2B098C5000F90E5E /* settings in Resources */,
+				2ADF440129CF68FC00C02E0D /* background.js in Resources */,
+				2ADF43FD29CF68FC00C02E0D /* images in Resources */,
+				2ADF43FF29CF68FC00C02E0D /* manifest.json in Resources */,
+				2ADF43FB29CF68FC00C02E0D /* _locales in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADF43E429CF68FC00C02E0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AFBADD02B098C5000F90E5E /* settings in Resources */,
+				2ADF440229CF68FC00C02E0D /* background.js in Resources */,
+				2ADF43FE29CF68FC00C02E0D /* images in Resources */,
+				2ADF440029CF68FC00C02E0D /* manifest.json in Resources */,
+				2ADF43FC29CF68FC00C02E0D /* _locales in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ADF43BA29CF68FC00C02E0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADF43F529CF68FC00C02E0D /* ViewController.swift in Sources */,
+				2ADF43C229CF68FC00C02E0D /* AppDelegate.swift in Sources */,
+				2ADF43C429CF68FC00C02E0D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADF43CC29CF68FC00C02E0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADF43F629CF68FC00C02E0D /* ViewController.swift in Sources */,
+				2ADF43D329CF68FC00C02E0D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADF43D829CF68FC00C02E0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADF43F929CF68FC00C02E0D /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADF43E229CF68FC00C02E0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADF43FA29CF68FC00C02E0D /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2ADF43DF29CF68FC00C02E0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ADF43DB29CF68FC00C02E0D /* Acidity Extension (iOS) */;
+			targetProxy = 2ADF43DE29CF68FC00C02E0D /* PBXContainerItemProxy */;
+		};
+		2ADF43E929CF68FC00C02E0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ADF43E529CF68FC00C02E0D /* Acidity Extension (macOS) */;
+			targetProxy = 2ADF43E829CF68FC00C02E0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2ADF43A829CF68F800C02E0D /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ADF43A929CF68F800C02E0D /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		2ADF43C529CF68FC00C02E0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ADF43C629CF68FC00C02E0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2ADF43C829CF68FC00C02E0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ADF43C929CF68FC00C02E0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2ADF43D429CF68FC00C02E0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ADF43D529CF68FC00C02E0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2ADF440B29CF68FC00C02E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2ADF440C29CF68FC00C02E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2ADF440E29CF68FC00C02E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Acidity Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.Acidity.Extension;
+				PRODUCT_NAME = "Acidity Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2ADF440F29CF68FC00C02E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Acidity Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.Acidity.Extension;
+				PRODUCT_NAME = "Acidity Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2ADF441229CF68FC00C02E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Acidity;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.acidity;
+				PRODUCT_NAME = Acidity;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2ADF441329CF68FC00C02E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Acidity;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.acidity;
+				PRODUCT_NAME = Acidity;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2ADF441529CF68FC00C02E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Acidity.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Acidity Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.Acidity.Extension;
+				PRODUCT_NAME = "Acidity Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2ADF441629CF68FC00C02E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Acidity.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Acidity Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.Acidity.Extension;
+				PRODUCT_NAME = "Acidity Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2ADF441929CF68FC00C02E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Acidity.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Acidity;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.Acidity;
+				PRODUCT_NAME = Acidity;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2ADF441A29CF68FC00C02E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Acidity.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Acidity;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.Acidity;
+				PRODUCT_NAME = Acidity;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2ADF43A529CF68F800C02E0D /* Build configuration list for PBXProject "Acidity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ADF440B29CF68FC00C02E0D /* Debug */,
+				2ADF440C29CF68FC00C02E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ADF440D29CF68FC00C02E0D /* Build configuration list for PBXNativeTarget "Acidity Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ADF440E29CF68FC00C02E0D /* Debug */,
+				2ADF440F29CF68FC00C02E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ADF441129CF68FC00C02E0D /* Build configuration list for PBXNativeTarget "Acidity (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ADF441229CF68FC00C02E0D /* Debug */,
+				2ADF441329CF68FC00C02E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ADF441429CF68FC00C02E0D /* Build configuration list for PBXNativeTarget "Acidity Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ADF441529CF68FC00C02E0D /* Debug */,
+				2ADF441629CF68FC00C02E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ADF441829CF68FC00C02E0D /* Build configuration list for PBXNativeTarget "Acidity (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ADF441929CF68FC00C02E0D /* Debug */,
+				2ADF441A29CF68FC00C02E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2ADF43A229CF68F800C02E0D /* Project object */;
+}

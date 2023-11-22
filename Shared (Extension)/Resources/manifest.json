@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "default_locale": "en",
+
+  "name": "__MSG_extension_name__",
+  "description": "__MSG_extension_description__",
+  "version": "0.1.0",
+
+  "icons": {
+    "512": "images/icon.png"
+  },
+
+  "options_ui": {
+    "page": "settings/settings.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "MacCtrl+Shift+A"
+      },
+      "description": "Navigate to archived page."
+    }
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "72": "images/toolbar-icon.png"
+    }
+  },
+
+  "permissions": ["activeTab", "tabs", "storage"]
+}

@@ -1,0 +1,38 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 50px;
+  font: -apple-system-short-body;
+}
+
+button {
+  font-size: 1em;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+input {
+  padding: 2px;
+  width: 250px;
+}
+
+h2:not(:first-of-type) {
+  margin-top: 30px;
+}
+
+#matches {
+  margin-top: 20px;
+}
+
+#matches > p {
+  margin: 0;
+}
+
+.remove-button {
+  margin-right: 5px;
+}

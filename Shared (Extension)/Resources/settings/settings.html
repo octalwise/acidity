@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <img src="../images/icon.png" width="64" height="64" alt="Acidity Icon">
+        <h1>Settings</h1>
+
+        <h2>General</h2>
+
+        <label for="archive">Archive URL</label>
+        <input id="archive" type="url" placeholder="e.g. https://archive.ph/newest/"></input>
+        <button id="set-archive">Set</button>
+
+        <h2>Matches</h2>
+        <p>Automatically navigates to archived versions of matched URLs.</p>
+
+        <input id="match" type="url" placeholder="e.g. https://www\.nytimes\.com/\d{4}/.*"></input>
+        <button id="add-match">Add</button>
+
+        <div id="matches">
+        </div>
+    </body>
+</html>
