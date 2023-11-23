@@ -9,7 +9,7 @@ import SafariServices
 typealias PlatformViewController = NSViewController
 #endif
 
-let extensionBundleIdentifier = "com.octalwise.Acidity.Extension"
+let extensionBundleIdentifier = "com.octalwise.acidity.extension"
 
 class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMessageHandler {
     @IBOutlet var webView: WKWebView!
