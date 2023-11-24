@@ -1,10 +1,12 @@
-:root {
+html {
   color-scheme: light dark;
+  line-height: 1.2;
 }
 
 body {
-  margin: 50px;
   font: -apple-system-short-body;
+  margin: 200px auto;
+  width: fit-content;
 }
 
 button {
@@ -17,12 +19,55 @@ label {
 }
 
 input {
+  border: 1px solid;
   padding: 2px;
   width: 250px;
 }
 
-h2:not(:first-of-type) {
+h2 {
   margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #05e;
+}
+
+a:hover, a:focus {
+  color: #03c;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #59f;
+  }
+
+  a:hover, a:focus {
+    color: #58d;
+  }
+}
+
+.input > button {
+  margin-left: 2px;
+}
+
+#info {
+  margin-bottom: 0;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+  transform: translateX(-38px);
+}
+
+#title > img {
+  margin-right: 6px;
+}
+
+#title > h1 {
+  display: inline;
+  margin: 0;
 }
 
 #matches {
@@ -30,9 +75,10 @@ h2:not(:first-of-type) {
 }
 
 #matches > p {
-  margin: 0;
+  margin: 0 0 8px 0;
 }
 
-.remove-button {
-  margin-right: 5px;
+#matches > p > button {
+  margin-right: 6px;
+  padding: 1px 3px;
 }

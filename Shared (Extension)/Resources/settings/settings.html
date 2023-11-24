@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>Acidity Settings</title>
+        <meta charset="utf-8">
 
         <link rel="stylesheet" href="./styles.css">
         <script src="./script.js" defer></script>
     </head>
 
     <body>
-        <img src="../images/icon.png" width="64" height="64" alt="Acidity Icon">
-        <h1>Settings</h1>
+        <div id="title">
+            <img src="../images/icon.png" width="32" height="32" alt="Acidity Icon">
+            <h1>Settings</h1>
+        </div>
+
+        <p id="info">
+            Access to all websites has to be allowed for matches to work.
+            <br>
+            For more information, see the <a href="https://octalwise.com/acidity">Acidity website</a>.
+        <p>
 
         <h2>General</h2>
 
-        <label for="archive">Archive URL</label>
-        <input id="archive" type="url" placeholder="e.g. https://archive.ph/newest/"></input>
-        <button id="set-archive">Set</button>
+        <div class="input">
+            <label for="archive">Archive URL</label>
+            <input id="archive" type="url" placeholder="e.g. https://archive.ph/newest/"></input>
+            <button id="set-archive">Set</button>
+        </div>
 
         <h2>Matches</h2>
-        <p>Automatically navigates to archived versions of matched URLs.</p>
 
-        <input id="match" type="url" placeholder="e.g. https://www\.nytimes\.com/\d{4}/.*"></input>
-        <button id="add-match">Add</button>
+        <div class="input">
+            <input id="match" type="url" placeholder="e.g. https://www\.nytimes\.com/\d{4}/.*"></input>
+            <button id="add-match">Add</button>
+        </div>
 
         <div id="matches"></div>
     </body>

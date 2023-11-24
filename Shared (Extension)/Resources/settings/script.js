@@ -27,7 +27,6 @@ function showMatches(matches) {
 
     // remove button
     const removeButton = document.createElement('button');
-    removeButton.className = 'remove-button';
     removeButton.innerText = '×';
 
     // remove match
