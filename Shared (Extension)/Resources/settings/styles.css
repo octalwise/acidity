@@ -29,6 +29,7 @@ input {
   border: 1px solid;
   padding: 2px;
   width: 250px;
+  font-size: 0.85em;
 }
 
 h2 {
