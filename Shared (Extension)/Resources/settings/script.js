@@ -76,7 +76,7 @@ document.getElementById('add-match').onclick = async () => {
   const match = document.getElementById('match').value;
 
   // validate regex
-  if (!validate(RegExp, match, 'match regex')) {
+  if (match.length === 0 || !validate(RegExp, match, 'match regex')) {
     return;
   }
 

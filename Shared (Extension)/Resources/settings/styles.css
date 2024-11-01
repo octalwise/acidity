@@ -1,10 +1,12 @@
 html {
   color-scheme: light dark;
-  line-height: 1.2;
 }
 
 body {
   font: -apple-system-short-body;
+  font-size: 15px;
+  line-height: 1.55;
+
   margin: 200px auto;
   width: fit-content;
 }
@@ -26,14 +28,13 @@ label {
 }
 
 input {
-  border: 1px solid;
-  padding: 2px;
+  padding: 2px 4px;
   width: 250px;
   font-size: 0.85em;
 }
 
 h2 {
-  margin-top: 30px;
+  margin-top: 35px;
   margin-bottom: 10px;
 }
 
@@ -89,14 +90,15 @@ a:hover, a:focus {
 }
 
 #matches {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #matches > p {
-  margin: 0 0 8px 0;
+  margin: 0 0 4px 0;
 }
 
 #matches > p > button {
   margin-right: 6px;
-  padding: 1px 3px;
+  padding: 0 2.5px 1.5px 2.5px;
+  line-height: 1;
 }
