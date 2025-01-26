@@ -1,20 +1,25 @@
 // navigate to archived url
-async function archiveTab(tab) {
+async function archive(tab) {
   const url = new URL(tab.url);
-  const { archive } = await browser.storage.local.get(['archive']);
+  const { archive, newTab } = await browser.storage.local.get(['archive', 'newTab']);
 
   // try creating url
   try {
     new URL(archive);
   } catch {
-    alert(`Invalid archive URL: ${archive}`)
+    alert(`Invalid archive URL: ${archive}`);
     return;
   }
 
-  const archivedURL = new URL(`${url.host}${url.pathname}`, archive);
+  const archivedURL = new URL(`${url.host}${url.pathname}`, archive).toString();
 
-  // update url
-  browser.tabs.update(tab.id, { url: archivedURL.toString() });
+  if (newTab) {
+    // open new tab
+    browser.tabs.create({ url: archivedURL, index: tab.index + 1 });
+  } else {
+    // update page
+    browser.tabs.update(tab.id, { url: archivedURL });
+  }
 }
 
 browser.storage.local.get(['archive'])
@@ -26,7 +31,7 @@ browser.storage.local.get(['archive'])
   });
 
 // listener for click
-browser.browserAction.onClicked.addListener(archiveTab);
+browser.browserAction.onClicked.addListener(archive);
 
 // listener for update
 browser.tabs.onUpdated.addListener(async (_tabId, changed, tab) => {
@@ -46,7 +51,7 @@ browser.tabs.onUpdated.addListener(async (_tabId, changed, tab) => {
 
     // test tab url
     if (regex.test(tab.url)) {
-      await archiveTab(tab);
+      await archive(tab);
       return;
     }
   }

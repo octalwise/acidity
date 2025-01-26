@@ -15,8 +15,8 @@
 		2ADF43CA29CF68FC00C02E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43C829CF68FC00C02E0D /* Main.storyboard */; };
 		2ADF43D329CF68FC00C02E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF43D229CF68FC00C02E0D /* AppDelegate.swift */; };
 		2ADF43D629CF68FC00C02E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43D429CF68FC00C02E0D /* Main.storyboard */; };
-		2ADF43DD29CF68FC00C02E0D /* Acidity Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2ADF43DC29CF68FC00C02E0D /* Acidity Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2ADF43E729CF68FC00C02E0D /* Acidity Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2ADF43E629CF68FC00C02E0D /* Acidity Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2ADF43DD29CF68FC00C02E0D /* Acidity Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2ADF43DC29CF68FC00C02E0D /* Acidity Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2ADF43E729CF68FC00C02E0D /* Acidity Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2ADF43E629CF68FC00C02E0D /* Acidity Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2ADF43ED29CF68FC00C02E0D /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43A829CF68F800C02E0D /* Main.html */; };
 		2ADF43EE29CF68FC00C02E0D /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43A829CF68F800C02E0D /* Main.html */; };
 		2ADF43F129CF68FC00C02E0D /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43AB29CF68F800C02E0D /* Style.css */; };
@@ -59,26 +59,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2ADF441029CF68FC00C02E0D /* Embed App Extensions */ = {
+		2ADF441029CF68FC00C02E0D /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				2ADF43DD29CF68FC00C02E0D /* Acidity Extension.appex in Embed App Extensions */,
+				2ADF43DD29CF68FC00C02E0D /* Acidity Extension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2ADF441729CF68FC00C02E0D /* Embed App Extensions */ = {
+		2ADF441729CF68FC00C02E0D /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				2ADF43E729CF68FC00C02E0D /* Acidity Extension.appex in Embed App Extensions */,
+				2ADF43E729CF68FC00C02E0D /* Acidity Extension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -260,7 +260,7 @@
 				2ADF43BA29CF68FC00C02E0D /* Sources */,
 				2ADF43BB29CF68FC00C02E0D /* Frameworks */,
 				2ADF43BC29CF68FC00C02E0D /* Resources */,
-				2ADF441029CF68FC00C02E0D /* Embed App Extensions */,
+				2ADF441029CF68FC00C02E0D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -279,7 +279,7 @@
 				2ADF43CC29CF68FC00C02E0D /* Sources */,
 				2ADF43CD29CF68FC00C02E0D /* Frameworks */,
 				2ADF43CE29CF68FC00C02E0D /* Resources */,
-				2ADF441729CF68FC00C02E0D /* Embed App Extensions */,
+				2ADF441729CF68FC00C02E0D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -331,9 +331,9 @@
 		2ADF43A229CF68F800C02E0D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = NO;
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					2ADF43BD29CF68FC00C02E0D = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -544,9 +544,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -602,9 +604,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -626,9 +630,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4JCD4WJ4R9;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JCD4WJ4R9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Acidity Extension";
@@ -639,7 +642,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -662,9 +665,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4JCD4WJ4R9;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JCD4WJ4R9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Acidity Extension";
@@ -675,7 +677,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -696,15 +698,13 @@
 		2ADF441229CF68FC00C02E0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4JCD4WJ4R9;
+				DEVELOPMENT_TEAM = 4JCD4WJ4R9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Acidity;
@@ -719,7 +719,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -743,15 +743,13 @@
 		2ADF441329CF68FC00C02E0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4JCD4WJ4R9;
+				DEVELOPMENT_TEAM = 4JCD4WJ4R9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Acidity;
@@ -766,7 +764,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -794,7 +792,8 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Acidity.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 14;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4JCD4WJ4R9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -806,8 +805,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -828,7 +827,8 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Acidity.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 14;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4JCD4WJ4R9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -840,8 +840,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -859,12 +859,12 @@
 		2ADF441929CF68FC00C02E0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Acidity.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 14;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4JCD4WJ4R9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -876,8 +876,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0.5;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -895,12 +895,12 @@
 		2ADF441A29CF68FC00C02E0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Acidity.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 14;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4JCD4WJ4R9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -912,8 +912,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0.5;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,

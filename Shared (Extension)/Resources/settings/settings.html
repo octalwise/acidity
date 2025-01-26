@@ -24,15 +24,20 @@
 
         <h2>General</h2>
 
-        <div class="input">
+        <div>
             <label for="archive">Archive URL</label>
             <input id="archive" type="url" placeholder="e.g. https://archive.ph/newest/"></input>
             <button id="set-archive">Set</button>
         </div>
 
+        <div>
+            <input id="new-tab" type="checkbox"></input>
+            <label for="new-tab">Open archived page in new tab</label>
+        </div>
+
         <h2>Matches</h2>
 
-        <div class="input">
+        <div>
             <input id="match" type="url" placeholder="e.g. https://www\.nytimes\.com/\d{4}/.*"></input>
             <button id="add-match">Add</button>
         </div>

@@ -4,22 +4,22 @@ html {
 
 body {
   font: -apple-system-short-body;
-  font-size: 15px;
+  font-size:   15px;
   line-height: 1.55;
 
   margin: 200px auto;
-  width: fit-content;
+  width:  fit-content;
 }
 
 @media only screen and (max-width: 768px) {
   body {
     padding: 0 20px;
-    margin: 50px auto;
+    margin:  50px auto;
   }
 }
 
-button {
-  font-size: 1em;
+h2 {
+  margin: 35px 0 10px 0;
 }
 
 label {
@@ -27,56 +27,64 @@ label {
   margin: 5px 0;
 }
 
-input {
-  padding: 2px 4px;
-  width: 250px;
+button {
+  font-size:   1em;
+  margin-left: 2px;
+}
+
+input:not([type=checkbox]) {
+  width:     250px;
+  padding:   2px 4px;
   font-size: 0.85em;
 }
 
-h2 {
-  margin-top: 35px;
-  margin-bottom: 10px;
+input[type=checkbox],
+input[type=checkbox] ~ label {
+  display: inline;
+}
+
+div:has(input[type=checkbox]) {
+  margin-top: 15px;
+}
+
+@media (pointer: fine) {
+  input[type=checkbox] {
+    height: 13px;
+  }
 }
 
 a {
-  color: #05e;
+  color: #0055ee;
 }
 
 a:hover, a:focus {
-  color: #03c;
+  color: #0033cc;
 }
 
 @media (prefers-color-scheme: dark) {
   a {
-    color: #59f;
+    color: #5599ff;
   }
 
   a:hover, a:focus {
-    color: #58d;
+    color: #5588dd;
   }
-}
-
-.input > button {
-  margin-left: 2px;
-}
-
-#info {
-  margin-bottom: 0;
 }
 
 #title {
   display: flex;
   align-items: center;
+
   transform: translateX(-38px);
 }
 
-#title > img {
+#title img {
   margin-right: 6px;
 }
 
-#title > h1 {
+#title h1 {
   display: inline;
-  margin: 0;
+  margin:  0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -84,20 +92,24 @@ a:hover, a:focus {
     transform: none;
   }
 
-  #title > img {
+  #title img {
     display: none;
   }
+}
+
+#info {
+  margin-bottom: 0;
 }
 
 #matches {
   margin-top: 10px;
 }
 
-#matches > p {
+#matches p {
   margin: 0 0 4px 0;
 }
 
-#matches > p > button {
+#matches p button {
   margin-right: 6px;
   padding: 0 2.5px 1.5px 2.5px;
   line-height: 1;

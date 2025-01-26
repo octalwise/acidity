@@ -30,7 +30,7 @@ function showMatches(matches) {
     removeButton.innerText = '×';
 
     // remove match
-    removeButton.onclick = async () => {
+    removeButton.addEventListener('click', async () => {
       const { matches } = await browser.storage.local.get(['matches']);
 
       // remove from matches
@@ -39,7 +39,7 @@ function showMatches(matches) {
 
       browser.storage.local.set({ matches: matchesClone });
       showMatches(matchesClone);
-    };
+    });
 
     // append parts
     matchElem.append(removeButton);
@@ -50,51 +50,60 @@ function showMatches(matches) {
 
   // replace children
   matchesList.replaceChildren(...children);
-// default archive
 }
 
 // set archive url
-document.getElementById('set-archive').onclick = () => {
-  let archive = document.getElementById('archive').value;
+document.getElementById('set-archive')
+  .addEventListener('click', () => {
+    let archive = document.getElementById('archive').value;
 
-  // validate url
-  if (!validate(URL, archive, 'archive URL')) {
-    return;
-  }
+    // validate url
+    if (!validate(URL, archive, 'archive URL')) {
+      return;
+    }
 
-  // add trailing slash
-  if (!archive.endsWith('/')) {
-    archive += '/';
-    document.getElementById('archive').value += '/';
-  }
+    // add trailing slash
+    if (!archive.endsWith('/')) {
+      archive += '/';
+      document.getElementById('archive').value += '/';
+    }
 
-  browser.storage.local.set({ archive });
-};
+    browser.storage.local.set({ archive });
+  });
+
+
+// toggle open in new tab
+document.getElementById('new-tab')
+  .addEventListener('change', (e) => {
+    const newTab = e.target.checked;
+    browser.storage.local.set({ newTab });
+  });
 
 // add match regex
-document.getElementById('add-match').onclick = async () => {
-  const match = document.getElementById('match').value;
+document.getElementById('add-match')
+  .addEventListener('click', async () => {
+    const match = document.getElementById('match').value;
 
-  // validate regex
-  if (match.length === 0 || !validate(RegExp, match, 'match regex')) {
-    return;
-  }
+    // validate regex
+    if (match.length === 0 || !validate(RegExp, match, 'match regex')) {
+      return;
+    }
 
-  // clear input
-  document.getElementById('match').value = '';
+    // clear input
+    document.getElementById('match').value = '';
 
-  let { matches } = await browser.storage.local.get(['matches']);
+    let { matches } = await browser.storage.local.get(['matches']);
 
-  // verify array
-  if (!Array.isArray(matches)) {
-    matches = [];
-  }
+    // verify array
+    if (!Array.isArray(matches)) {
+      matches = [];
+    }
 
-  matches = [...matches, match];
+    matches = [...matches, match];
 
-  browser.storage.local.set({ matches });
-  showMatches(matches);
-};
+    browser.storage.local.set({ matches });
+    showMatches(matches);
+  });
 
 // show matches
 browser.storage.local.get(['matches'])
@@ -110,4 +119,10 @@ browser.storage.local.get(['archive'])
       browser.storage.local.set({ archive: 'https://archive.ph/newest/' });
       document.getElementById('archive').value = 'https://archive.ph/newest/';
     }
+  });
+
+// set new tab checkbox
+browser.storage.local.get(['newTab'])
+  .then(({ newTab }) => {
+    document.getElementById('new-tab').checked = !!newTab;
   });
