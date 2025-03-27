@@ -56,3 +56,16 @@ browser.tabs.onUpdated.addListener(async (_tabId, changed, tab) => {
     }
   }
 });
+
+// context menu action
+browser.menus.create({
+  id: 'archive',
+  title: 'Go to Archive',
+  contexts: ['all'],
+});
+
+browser.menus.onClicked.addListener((info, tab) => {
+  if (info.menuItemId === 'archive') {
+    archive(tab);
+  }
+});

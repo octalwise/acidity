@@ -34,5 +34,5 @@
     }
   },
 
-  "permissions": ["activeTab", "tabs", "storage"]
+  "permissions": ["activeTab", "tabs", "storage", "menus"]
 }
