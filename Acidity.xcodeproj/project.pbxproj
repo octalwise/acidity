@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2A7CEC5D29D8D77D00A4548C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CEC5C29D8D77D00A4548C /* Icon.png */; };
 		2A7CEC5E29D8D77D00A4548C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CEC5C29D8D77D00A4548C /* Icon.png */; };
+		2AA2062B2E9AEF940013A2C1 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 2AA2062A2E9AEF940013A2C1 /* AppIcon.icon */; };
+		2AA2062C2E9AEF940013A2C1 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 2AA2062A2E9AEF940013A2C1 /* AppIcon.icon */; };
 		2ADF43C229CF68FC00C02E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF43C129CF68FC00C02E0D /* AppDelegate.swift */; };
 		2ADF43C429CF68FC00C02E0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF43C329CF68FC00C02E0D /* SceneDelegate.swift */; };
 		2ADF43C729CF68FC00C02E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43C529CF68FC00C02E0D /* LaunchScreen.storyboard */; };
@@ -85,6 +87,7 @@
 
 /* Begin PBXFileReference section */
 		2A7CEC5C29D8D77D00A4548C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		2AA2062A2E9AEF940013A2C1 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		2ADF43A929CF68F800C02E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
 		2ADF43AB29CF68F800C02E0D /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
 		2ADF43AC29CF68F800C02E0D /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
@@ -163,6 +166,7 @@
 			children = (
 				2ADF43AD29CF68F800C02E0D /* ViewController.swift */,
 				2ADF43AE29CF68FB00C02E0D /* Assets.xcassets */,
+				2AA2062A2E9AEF940013A2C1 /* AppIcon.icon */,
 				2ADF43A729CF68F800C02E0D /* Resources */,
 			);
 			path = "Shared (App)";
@@ -380,6 +384,7 @@
 				2ADF43F329CF68FC00C02E0D /* Script.js in Resources */,
 				2ADF43F729CF68FC00C02E0D /* Assets.xcassets in Resources */,
 				2ADF43CA29CF68FC00C02E0D /* Main.storyboard in Resources */,
+				2AA2062B2E9AEF940013A2C1 /* AppIcon.icon in Resources */,
 				2A7CEC5D29D8D77D00A4548C /* Icon.png in Resources */,
 				2ADF43F129CF68FC00C02E0D /* Style.css in Resources */,
 			);
@@ -392,6 +397,7 @@
 				2A7CEC5E29D8D77D00A4548C /* Icon.png in Resources */,
 				2ADF43F229CF68FC00C02E0D /* Style.css in Resources */,
 				2ADF43D629CF68FC00C02E0D /* Main.storyboard in Resources */,
+				2AA2062C2E9AEF940013A2C1 /* AppIcon.icon in Resources */,
 				2ADF43F429CF68FC00C02E0D /* Script.js in Resources */,
 				2ADF43F829CF68FC00C02E0D /* Assets.xcassets in Resources */,
 				2ADF43EE29CF68FC00C02E0D /* Main.html in Resources */,
@@ -700,6 +706,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
@@ -745,6 +752,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;

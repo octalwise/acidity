@@ -75,11 +75,11 @@ a:hover, a:focus {
   display: flex;
   align-items: center;
 
-  transform: translateX(-38px);
+  transform: translateX(-42px);
 }
 
 #title img {
-  margin-right: 6px;
+  margin-right: 10px;
 }
 
 #title h1 {
