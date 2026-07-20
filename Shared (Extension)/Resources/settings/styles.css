@@ -43,8 +43,12 @@ input[type=checkbox] ~ label {
   display: inline;
 }
 
-div:has(input[type=checkbox]) {
+#checkboxes {
   margin-top: 15px;
+}
+
+#checkboxes div:not(:first-of-type) {
+  margin-top: 5px;
 }
 
 @media (pointer: fine) {

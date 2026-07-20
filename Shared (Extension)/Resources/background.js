@@ -1,9 +1,18 @@
-// navigate to archived url
+const backupURLs = [
+  'archive.today',
+  'archive.fo',
+  'archive.is',
+  'archive.li',
+  'archive.md',
+  'archive.ph',
+  'archive.vn'
+];
+
 async function archive(tab) {
   const url = new URL(tab.url);
-  const { archive, newTab } = await browser.storage.local.get(['archive', 'newTab']);
 
-  // try creating url
+  const { archive, newTab, backups } = await browser.storage.local.get(['archive', 'newTab', 'backups']);
+
   try {
     new URL(archive);
   } catch {
@@ -11,29 +20,55 @@ async function archive(tab) {
     return;
   }
 
-  const archivedURL = new URL(`${url.host}${url.pathname}`, archive).toString();
+  let base = archive;
+
+  if (backups && !(await test(archive))) {
+    await new Promise((resolve) => {
+      let remaining = backupURLs.length;
+
+      backupURLs.forEach((url) => {
+        url = `https://${url}/newest/`;
+
+        test(url)
+          .then((t) => {
+            if (t) {
+              base = url;
+              resolve();
+            }
+          })
+          .finally(() => {
+            if (--remaining === 0) {
+              resolve();
+            }
+          });
+      });
+    });
+  }
+
+  const archivedURL = new URL(`${url.host}${url.pathname}`, base).toString();
 
   if (newTab) {
-    // open new tab
     browser.tabs.create({ url: archivedURL, index: tab.index + 1 });
   } else {
-    // update page
     browser.tabs.update(tab.id, { url: archivedURL });
   }
+}
+
+async function test(url) {
+  const base = new URL(url).origin;
+  const res = await fetch(base, { method: 'HEAD' });
+  return res.status === 200;
 }
 
 browser.storage.local.get(['archive'])
   .then(({ archive }) => {
     if (!archive) {
-      // default archive
       browser.storage.local.set({ archive: 'https://archive.ph/newest/' });
     }
   });
 
-// listener for click
 browser.browserAction.onClicked.addListener(archive);
 
-// listener for update
 browser.tabs.onUpdated.addListener(async (_tabId, changed, tab) => {
   if (!changed.url) {
     return;
@@ -46,10 +81,8 @@ browser.tabs.onUpdated.addListener(async (_tabId, changed, tab) => {
   }
 
   for (const match of matches) {
-    // match whole string
     const regex = new RegExp(`^${match}$`);
 
-    // test tab url
     if (regex.test(tab.url)) {
       await archive(tab);
       return;
@@ -57,7 +90,6 @@ browser.tabs.onUpdated.addListener(async (_tabId, changed, tab) => {
   }
 });
 
-// context menu action
 browser.menus.create({
   id: 'archive',
   title: 'Go to Archive',
