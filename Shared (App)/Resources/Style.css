@@ -34,7 +34,6 @@ button {
 body:not(.platform-mac, .platform-ios) :is(.platform-mac, .platform-ios),
 body.platform-ios .platform-mac,
 body.platform-mac .platform-ios,
-body.platform-ios .platform-mac,
 body:not(.state-on, .state-off) :is(.state-on, .state-off),
 body.state-on :is(.state-off, .state-unknown),
 body.state-off :is(.state-on, .state-unknown) {

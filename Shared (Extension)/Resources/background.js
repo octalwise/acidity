@@ -16,9 +16,12 @@ async function archive(tab) {
   try {
     new URL(archive);
   } catch {
-    alert(`Invalid archive URL: ${archive}`);
+    console.error(`Invalid archive URL: ${archive}`);
     return;
   }
+
+  const host = url.hostname;
+  if (backupURLs.includes(host) || host === new URL(archive).hostname) return;
 
   let base = archive;
 
@@ -55,9 +58,12 @@ async function archive(tab) {
 }
 
 async function test(url) {
-  const base = new URL(url).origin;
-  const res = await fetch(base, { method: 'HEAD' });
-  return res.status === 200;
+  try {
+    const res = await fetch(new URL(url).origin, { method: 'HEAD' });
+    return res.ok;
+  } catch {
+    return false;
+  }
 }
 
 browser.storage.local.get(['archive'])
@@ -70,15 +76,11 @@ browser.storage.local.get(['archive'])
 browser.browserAction.onClicked.addListener(archive);
 
 browser.tabs.onUpdated.addListener(async (_tabId, changed, tab) => {
-  if (!changed.url) {
-    return;
-  }
+  if (!changed.url) return;
 
   const { matches } = await browser.storage.local.get(['matches']);
 
-  if (!Array.isArray(matches)) {
-    return;
-  }
+  if (!Array.isArray(matches)) return;
 
   for (const match of matches) {
     const regex = new RegExp(`^${match}$`);
