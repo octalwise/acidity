@@ -14,7 +14,11 @@ async function archive(tab) {
   const { archive, newTab, backups } = await browser.storage.local.get(['archive', 'newTab', 'backups']);
 
   try {
-    new URL(archive);
+    const archiveHost = new URL(archive).hostname;
+    if (!backupURLs.includes(archiveHost)) {
+      console.error(`Untrusted archive host: ${archiveHost}`);
+      return;
+    }
   } catch {
     console.error(`Invalid archive URL: ${archive}`);
     return;
