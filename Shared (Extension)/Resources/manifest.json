@@ -1,24 +1,19 @@
 {
   "manifest_version": 2,
   "default_locale": "en",
-
   "name": "__MSG_extension_name__",
   "description": "__MSG_extension_description__",
-  "version": "1.0.9",
-
+  "version": "1.0.10",
   "icons": {
-    "512": "images/icon.png"
+    "512": "assets/icon.png"
   },
-
   "options_ui": {
     "page": "settings/settings.html"
   },
-
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
-
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
@@ -27,12 +22,10 @@
       "description": "Navigate to archived page."
     }
   },
-
   "browser_action": {
     "default_icon": {
-      "72": "images/toolbar-icon.png"
+      "72": "assets/toolbar-icon.png"
     }
   },
-
   "permissions": ["activeTab", "tabs", "storage", "menus"]
 }

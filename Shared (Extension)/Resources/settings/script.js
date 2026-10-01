@@ -1,3 +1,5 @@
+document.addEventListener('click', () => {});
+
 function validate(className, value, error) {
   try {
     new className(value);

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2A7CEC5D29D8D77D00A4548C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CEC5C29D8D77D00A4548C /* Icon.png */; };
 		2A7CEC5E29D8D77D00A4548C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CEC5C29D8D77D00A4548C /* Icon.png */; };
+		2A91717F306E30E100476A6B /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 2A91717E306E30E100476A6B /* background.js */; };
+		2A917180306E30E100476A6B /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 2A91717E306E30E100476A6B /* background.js */; };
+		2A917188306E31C500476A6B /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 2A917187306E316600476A6B /* assets */; };
+		2A917189306E31C500476A6B /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 2A917187306E316600476A6B /* assets */; };
 		2AA2062B2E9AEF940013A2C1 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 2AA2062A2E9AEF940013A2C1 /* AppIcon.icon */; };
 		2AA2062C2E9AEF940013A2C1 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 2AA2062A2E9AEF940013A2C1 /* AppIcon.icon */; };
 		2ADF43C229CF68FC00C02E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF43C129CF68FC00C02E0D /* AppDelegate.swift */; };
@@ -33,12 +37,8 @@
 		2ADF43FA29CF68FC00C02E0D /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF43B029CF68FB00C02E0D /* SafariWebExtensionHandler.swift */; };
 		2ADF43FB29CF68FC00C02E0D /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B229CF68FB00C02E0D /* _locales */; };
 		2ADF43FC29CF68FC00C02E0D /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B229CF68FB00C02E0D /* _locales */; };
-		2ADF43FD29CF68FC00C02E0D /* images in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B329CF68FB00C02E0D /* images */; };
-		2ADF43FE29CF68FC00C02E0D /* images in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B329CF68FB00C02E0D /* images */; };
 		2ADF43FF29CF68FC00C02E0D /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B429CF68FB00C02E0D /* manifest.json */; };
 		2ADF440029CF68FC00C02E0D /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B429CF68FB00C02E0D /* manifest.json */; };
-		2ADF440129CF68FC00C02E0D /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B529CF68FB00C02E0D /* background.js */; };
-		2ADF440229CF68FC00C02E0D /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF43B529CF68FB00C02E0D /* background.js */; };
 		2AFBADCF2B098C5000F90E5E /* settings in Resources */ = {isa = PBXBuildFile; fileRef = 2AFBADCE2B098C5000F90E5E /* settings */; };
 		2AFBADD02B098C5000F90E5E /* settings in Resources */ = {isa = PBXBuildFile; fileRef = 2AFBADCE2B098C5000F90E5E /* settings */; };
 /* End PBXBuildFile section */
@@ -87,6 +87,8 @@
 
 /* Begin PBXFileReference section */
 		2A7CEC5C29D8D77D00A4548C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		2A91717E306E30E100476A6B /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		2A917187306E316600476A6B /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		2AA2062A2E9AEF940013A2C1 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		2ADF43A929CF68F800C02E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
 		2ADF43AB29CF68F800C02E0D /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -95,9 +97,7 @@
 		2ADF43AE29CF68FB00C02E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ADF43B029CF68FB00C02E0D /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		2ADF43B229CF68FB00C02E0D /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
-		2ADF43B329CF68FB00C02E0D /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		2ADF43B429CF68FB00C02E0D /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
-		2ADF43B529CF68FB00C02E0D /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
 		2ADF43BE29CF68FC00C02E0D /* Acidity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acidity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADF43C129CF68FC00C02E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ADF43C329CF68FC00C02E0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,10 +195,10 @@
 		2ADF43B129CF68FB00C02E0D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2A91717E306E30E100476A6B /* background.js */,
 				2ADF43B229CF68FB00C02E0D /* _locales */,
-				2ADF43B329CF68FB00C02E0D /* images */,
+				2A917187306E316600476A6B /* assets */,
 				2ADF43B429CF68FB00C02E0D /* manifest.json */,
-				2ADF43B529CF68FB00C02E0D /* background.js */,
 				2AFBADCE2B098C5000F90E5E /* settings */,
 			);
 			path = Resources;
@@ -408,10 +408,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A917188306E31C500476A6B /* assets in Resources */,
 				2AFBADCF2B098C5000F90E5E /* settings in Resources */,
-				2ADF440129CF68FC00C02E0D /* background.js in Resources */,
-				2ADF43FD29CF68FC00C02E0D /* images in Resources */,
 				2ADF43FF29CF68FC00C02E0D /* manifest.json in Resources */,
+				2A91717F306E30E100476A6B /* background.js in Resources */,
 				2ADF43FB29CF68FC00C02E0D /* _locales in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,10 +420,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A917189306E31C500476A6B /* assets in Resources */,
 				2AFBADD02B098C5000F90E5E /* settings in Resources */,
-				2ADF440229CF68FC00C02E0D /* background.js in Resources */,
-				2ADF43FE29CF68FC00C02E0D /* images in Resources */,
 				2ADF440029CF68FC00C02E0D /* manifest.json in Resources */,
+				2A917180306E30E100476A6B /* background.js in Resources */,
 				2ADF43FC29CF68FC00C02E0D /* _locales in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,6 +638,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4JCD4WJ4R9;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4JCD4WJ4R9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Acidity Extension";
@@ -656,7 +657,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.acidity.extension;
 				PRODUCT_NAME = "Acidity Extension";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "XC Wildcard";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "XC Wildcard 2";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -673,6 +674,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4JCD4WJ4R9;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4JCD4WJ4R9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Acidity Extension";
@@ -691,7 +693,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.acidity.extension;
 				PRODUCT_NAME = "Acidity Extension";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "XC Wildcard";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "XC Wildcard 2";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -712,6 +714,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4JCD4WJ4R9;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4JCD4WJ4R9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Acidity;
@@ -736,7 +739,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.acidity;
 				PRODUCT_NAME = Acidity;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "XC Wildcard";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "XC Wildcard 2";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -758,6 +761,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4JCD4WJ4R9;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4JCD4WJ4R9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Acidity;
@@ -782,7 +786,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.octalwise.acidity;
 				PRODUCT_NAME = Acidity;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "XC Wildcard";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "XC Wildcard 2";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -813,7 +817,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0.9;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -848,7 +852,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0.9;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -884,7 +888,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0.9;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -920,7 +924,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0.9;
 				OTHER_LDFLAGS = (
 					"-framework",
